@@ -1,0 +1,5 @@
+export const INCREMENT = "INC"
+export const DECREMENT = "DCM"
+export const ADD = "ADD"
+export const SUB = "SUB"
+export const RESULT = "SHO"
