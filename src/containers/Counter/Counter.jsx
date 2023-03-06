@@ -27,6 +27,10 @@ class Counter extends React.Component {
           label="کاهش ۲"
           clicked={this.props.onSub}
         />
+         <CounterControl
+          label="صفر"
+          clicked={this.props.onZero}
+        />   
         <CounterControl
           label="Result"
           clicked={this.props.onShow}
@@ -58,7 +62,8 @@ const mapDispatchToProps = (dispatch)=>{
     onDecrement : ()=>  dispatch({ type : "DCM" }),
     onAdd : ()=> dispatch({ type : "ADD" ,  value: 2 }),
     onSub : ()=> dispatch({ type : "SUB" ,  value: -2 }),
-    onShow : ()=> dispatch({ type : "SHO" })
+    onShow : ()=> dispatch({ type : "SHO" }),
+    onZero : ()=> dispatch({ type : "ZERO" , value: 0 }),
   }
 }
 
