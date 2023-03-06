@@ -29,6 +29,13 @@ const reducer = (state = initioalState  , action) => {
             ...state,
             counter : state.counter + action.value
         }
+            
+            
+        case actionType.ZERO : 
+        return{
+            ...state,
+            counter : state.counter  = action.value
+        }    
 
 
         case actionType.RESULT : 
